@@ -26,7 +26,13 @@ public class RiskButton : MonoBehaviour {
       dice[i].GetComponent<RollDice>().DicePhase();
     }
     yield return new WaitForSeconds(2f);
+  }
 
+  public bool getDidRollStatus() {
+    return !_coroutineAllowed;
+  }
+
+  public void turnReRollOn(){
     _coroutineAllowed = true;
   }
 }

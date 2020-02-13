@@ -167,8 +167,9 @@ GameObject:
   - component: {fileID: 1371253877106723333}
   - component: {fileID: 1371253877106723354}
   - component: {fileID: 1371253877106723355}
+  - component: {fileID: 6954317774185805617}
   m_Layer: 5
-  m_Name: ChoiceButton
+  m_Name: MovementChoiceButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -277,6 +278,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6954317774185805617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371253877106723353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2597d0b67a2d455093872951d1e9825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1371253876344172382
 PrefabInstance:
   m_ObjectHideFlags: 0
