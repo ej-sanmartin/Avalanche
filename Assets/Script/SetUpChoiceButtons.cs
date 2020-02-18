@@ -43,7 +43,6 @@ public class SetUpChoiceButtons : MonoBehaviour {
       int diceNumber = GetTargetDiceResults(i);
 
       diceNumbers.Add(diceNumber);
-      Debug.Log(diceNumber);
     }
 
     for(int i = 0; i < diceOnButtons.Length; i++){
@@ -58,7 +57,7 @@ public class SetUpChoiceButtons : MonoBehaviour {
       targetDiceResults[diceInListToGet].GetComponent<Dice>().SetDiceNumber();
       return targetDiceResults[diceInListToGet].GetComponent<Dice>().GetDiceNumber();
     } else {
-      return -1;
+      return -1; // for errors
     }
   }
 }

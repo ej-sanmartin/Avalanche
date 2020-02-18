@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RollDice : MonoBehaviour {
   public Sprite[] _diceSides;
+  public Sprite emptyDice;
   private Image _img;
   private int _playerTurn = 1;
   private bool _coroutineAllowed = true;
@@ -11,7 +12,7 @@ public class RollDice : MonoBehaviour {
 
   void Awake(){
     _img = GetComponent<Image>();
-    _img.sprite = _diceSides[5];
+    _img.sprite = emptyDice;
   }
 
   public void DicePhase(){
