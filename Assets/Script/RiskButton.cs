@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class RiskButton : MonoBehaviour {
   public Button riskButton;
   public GameObject[] dice;
+  public GameObject[] choiceButtons;
 
   private bool _coroutineAllowed = true;
 
@@ -25,7 +26,16 @@ public class RiskButton : MonoBehaviour {
     for(int i = 0; i < dice.Length; i++){
       dice[i].GetComponent<RollDice>().DicePhase();
     }
+
+    StartCoroutine(ActivateAndSetUpChoiceButtons());
     yield return new WaitForSeconds(2f);
+  }
+
+  private IEnumerator ActivateAndSetUpChoiceButtons(){
+    yield return new WaitForSeconds(2.01f);
+    for(int i = 0; i < choiceButtons.Length; i++){
+      choiceButtons[i].GetComponent<SetUpChoiceButtons>().setDiceUp();
+    }
   }
 
   public bool getDidRollStatus() {

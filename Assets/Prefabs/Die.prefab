@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1648751147549104306}
   - component: {fileID: 1648751147549104307}
   - component: {fileID: 3317956263316105925}
+  - component: {fileID: 2850444357082244278}
   m_Layer: 5
   m_Name: Die
   m_TagString: Untagged
@@ -124,3 +125,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2850444357082244278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648751147549104309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2b4d8e3a1432472786d6a17ffd99ab4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

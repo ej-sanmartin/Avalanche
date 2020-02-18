@@ -783,6 +783,12 @@ Transform:
   m_Father: {fileID: 1812835743}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &315207094 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 425069323128933003, guid: 1064af1ab7c9941768af08eba9946f63,
+    type: 3}
+  m_PrefabInstance: {fileID: 1452378255}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &331623071
 GameObject:
   m_ObjectHideFlags: 0
@@ -2892,6 +2898,12 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1371253877517054485}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1057050427 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 425069324270298033, guid: 1064af1ab7c9941768af08eba9946f63,
+    type: 3}
+  m_PrefabInstance: {fileID: 1452378255}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1074924248
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4245,6 +4257,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6954317774185805617, guid: 1064af1ab7c9941768af08eba9946f63,
         type: 3}
+      propertyPath: diceOnButtons.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6954317774185805617, guid: 1064af1ab7c9941768af08eba9946f63,
+        type: 3}
       propertyPath: moveTheseNumbersButton
       value: 
       objectReference: {fileID: 747854343}
@@ -4315,6 +4332,26 @@ PrefabInstance:
       propertyPath: riskButton
       value: 
       objectReference: {fileID: 7117983567671016511}
+    - target: {fileID: 6954317774185805617, guid: 1064af1ab7c9941768af08eba9946f63,
+        type: 3}
+      propertyPath: diceOnButtons.Array.data[0]
+      value: 
+      objectReference: {fileID: 1994278503}
+    - target: {fileID: 6954317774185805617, guid: 1064af1ab7c9941768af08eba9946f63,
+        type: 3}
+      propertyPath: diceOnButtons.Array.data[1]
+      value: 
+      objectReference: {fileID: 315207094}
+    - target: {fileID: 6954317774185805617, guid: 1064af1ab7c9941768af08eba9946f63,
+        type: 3}
+      propertyPath: diceOnButtons.Array.data[2]
+      value: 
+      objectReference: {fileID: 1057050427}
+    - target: {fileID: 6954317774185805617, guid: 1064af1ab7c9941768af08eba9946f63,
+        type: 3}
+      propertyPath: diceOnButtons.Array.data[3]
+      value: 
+      objectReference: {fileID: 1628436418}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1064af1ab7c9941768af08eba9946f63, type: 3}
 --- !u!224 &1452378256 stripped
@@ -4815,6 +4852,12 @@ Transform:
   m_Father: {fileID: 1812835743}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1628436418 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 425069323983370219, guid: 1064af1ab7c9941768af08eba9946f63,
+    type: 3}
+  m_PrefabInstance: {fileID: 1452378255}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1629437154
 GameObject:
   m_ObjectHideFlags: 0
@@ -5154,6 +5197,51 @@ MonoBehaviour:
   moveSpeed: 1
   waypointIndex: 0
   moveAllowed: 0
+--- !u!1 &1820855207
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1820855209}
+  - component: {fileID: 1820855208}
+  m_Layer: 0
+  m_Name: ChoiceUIDisplayHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1820855208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820855207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb8720004ca844f26a619e2290b960c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  riskButton: {fileID: 7117983567671016511}
+  choiceOfMovementUI: {fileID: 1607839831}
+--- !u!4 &1820855209
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820855207}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1848426632
 GameObject:
   m_ObjectHideFlags: 0
@@ -5688,6 +5776,12 @@ Transform:
   m_Father: {fileID: 1812835743}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1994278503 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 425069323805419701, guid: 1064af1ab7c9941768af08eba9946f63,
+    type: 3}
+  m_PrefabInstance: {fileID: 1452378255}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2016061382 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1371253877106723355, guid: 1064af1ab7c9941768af08eba9946f63,

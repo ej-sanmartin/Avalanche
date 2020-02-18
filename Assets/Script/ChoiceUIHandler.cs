@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class ChoiceUIHandler : MonoBehaviour {
-  // to get reference for checking if dice is rolled
+  // to get reference for checking if dice is rolled and the UI to be effected
   public GameObject riskButton;
   public GameObject choiceOfMovementUI;
 
