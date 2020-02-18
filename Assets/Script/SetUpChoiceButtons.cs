@@ -4,10 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class SetUpChoiceButtons : MonoBehaviour {
+  // variables for holding all objects effected by this script
   public Button moveTheseNumbersButton;
   public GameObject[] targetDiceResults; // from DiceArea Canvas
   public GameObject[] diceOnButtons; // The dice attatched to this button's UI
 
+  // variables handling rendering image logic
   public Sprite emptyDice; // for displaying null results or an unusable result
   public Sprite[] diceSides; // dice sprites
   private Image[] diceDisplayedOnThisButton;
@@ -21,6 +23,7 @@ public class SetUpChoiceButtons : MonoBehaviour {
   // variabls needed for the logic for getting dice numbers and setting dice image in button
   List<int> diceNumbers = new List<int>();
 
+  // will be called by riskbutton script when dice finishes rolling
   public void setDiceUp(){
     // sets up bool for if dice is rolled, initially set to false
     isDiceRolled = riskButton.GetComponent<RiskButton>().getDidRollStatus();
@@ -45,6 +48,7 @@ public class SetUpChoiceButtons : MonoBehaviour {
       diceNumbers.Add(diceNumber);
     }
 
+    // renders dice side onto the button UI using the data collected into the diceNumbers list
     for(int i = 0; i < diceOnButtons.Length; i++){
       int diceNumber = diceNumbers[i];
 
@@ -52,9 +56,10 @@ public class SetUpChoiceButtons : MonoBehaviour {
     }
   }
 
+  // returns an int that corresponds to a dice side (0 => side 1, 1 => side 2, etc)
   private int GetTargetDiceResults(int diceInListToGet){
     if(isDiceRolled == true){
-      targetDiceResults[diceInListToGet].GetComponent<Dice>().SetDiceNumber();
+      targetDiceResults[diceInListToGet].GetComponent<Dice>().SetDiceNumber(); // makes sure to set dice only when this script's functions are called AND after a player has rolled.
       return targetDiceResults[diceInListToGet].GetComponent<Dice>().GetDiceNumber();
     } else {
       return -1; // for errors
