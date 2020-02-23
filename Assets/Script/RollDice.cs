@@ -8,7 +8,6 @@ public class RollDice : MonoBehaviour {
   private Image _img;
   private int _playerTurn = 1;
   private bool _coroutineAllowed = true;
-  private bool _isRolling = false;
 
   void Awake(){
     _img = GetComponent<Image>();
@@ -19,11 +18,9 @@ public class RollDice : MonoBehaviour {
     if(_coroutineAllowed){
       StartCoroutine(RollTheDice());
     }
-    _isRolling = false;
   }
 
   private IEnumerator RollTheDice(){
-    _isRolling = true;
     _coroutineAllowed = false;
     int randomDiceSide = 0;
     for (int i = 0; i <= 20; i++){
